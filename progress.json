@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T20:22:35.075Z",
+  "generated_at": "2026-11-12T20:22:37.251Z",
   "items": {
     "math:7": {
       "kind": "math",
@@ -211,6 +211,39 @@
       "last_pushed_at": "2026-11-03T22:35:01.451Z",
       "language": "python",
       "lines": 40
+    },
+    "math:18": {
+      "kind": "math",
+      "id": "18",
+      "title": "Descriptive Statistics",
+      "difficulty": "easy",
+      "category": "Probability and Statistics for Machine Learning",
+      "url": "https://www.deep-ml.com/math-problems/18",
+      "path": "math/0018-descriptive-statistics",
+      "first_solved_at": "2026-11-04T05:05:33.680Z",
+      "last_pushed_at": "2026-11-04T05:05:33.680Z"
+    },
+    "math:19": {
+      "kind": "math",
+      "id": "19",
+      "title": "Probability Fundamentals",
+      "difficulty": "easy",
+      "category": "Probability and Statistics for Machine Learning",
+      "url": "https://www.deep-ml.com/math-problems/19",
+      "path": "math/0019-probability-fundamentals",
+      "first_solved_at": "2026-11-04T05:25:42.138Z",
+      "last_pushed_at": "2026-11-04T05:25:42.138Z"
+    },
+    "math:5": {
+      "kind": "math",
+      "id": "5",
+      "title": "Gradient Descent Updates",
+      "difficulty": "easy",
+      "category": "Calculus for Machine Learning",
+      "url": "https://www.deep-ml.com/math-problems/5",
+      "path": "math/0005-gradient-descent-updates",
+      "first_solved_at": "2026-11-04T21:50:20.241Z",
+      "last_pushed_at": "2026-11-04T21:50:20.241Z"
     }
   }
 }
