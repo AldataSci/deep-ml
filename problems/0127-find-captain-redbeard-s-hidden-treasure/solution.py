@@ -13,7 +13,7 @@ def find_treasure(start_x: float) -> float:
     velocity = 0
     
     for step in range(steps):
-        # Find the slope i.e plug in x into the derivative..
+        # Find the slope i.e plug in x into the derivative.. which we manually input.. 
         slope = (4 * (start_x ** 3)) - (9 * (start_x ** 2))
         
         # Update the velocity with our momentum formula 
