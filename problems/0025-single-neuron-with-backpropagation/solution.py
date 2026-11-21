@@ -4,9 +4,10 @@ from scipy.special import expit
 def train_neuron(features: np.ndarray, labels: np.ndarray, int_weights: np.ndarray, int_bias: float, learning_rate: float, epochs: int) -> (np.ndarray, float, list[float]):
     # Your code here
     mse_avg = []
-
+    
+    # Before the start of each epochs..
     for epoch in range(epochs):
-    # We need a new predcitons list for every epoch.. ohh cause we are using the updated weights..
+    # We need a new predictions list for every epoch.. ohh cause we are using the updated weights..
         predictions = []
         for i in range(len(features)):
             total = 0.0
@@ -30,6 +31,7 @@ def train_neuron(features: np.ndarray, labels: np.ndarray, int_weights: np.ndarr
 # derivative of loss
         dl = []
         for y,y_prime in zip(labels,predictions):
+            # Calculate the diff
             diff = y_prime - y
     # Now we square it
             diff_sq = (diff) ** 2
@@ -47,7 +49,6 @@ def train_neuron(features: np.ndarray, labels: np.ndarray, int_weights: np.ndarr
 
 # Step 3 loss backawards step step
 
-#for 
 #deriv_of_loss = 2 * (predictions - labels)
 #deriv_of_sigmoid = predictions * (1 - predictions)
 
@@ -60,9 +61,9 @@ def train_neuron(features: np.ndarray, labels: np.ndarray, int_weights: np.ndarr
         delta = []
 
         for i in range(len(ds)):
+            # Here delta is calculated multiplying the deriv of sigmoid and deriv of loss.
             delta.append(ds[i] * dl[i])
     
-#print(delta)
 
 # Now we assign blames.. to the weight and biass.
 
@@ -70,12 +71,12 @@ def train_neuron(features: np.ndarray, labels: np.ndarray, int_weights: np.ndarr
 
 # Weight 1 gradient..
 # Multiply each sample's feature by the first gradient
-# Is this batch gradeitn descent.. 
+# Is this batch gradient descent.. 
         total1 = 0
         for i in range(len(features)):
     # This prints out the first value for every sample.. 
             total1 = total1 + (features[i][0] * delta[i])
-
+        # The first gradient vector averaged across all samples..
         first_grad_vector_avg1 = total1/len(features)
 
 #print(first_grad_vector_avg1)
@@ -84,7 +85,7 @@ def train_neuron(features: np.ndarray, labels: np.ndarray, int_weights: np.ndarr
         for i in range(len(features)):
     # We multiply by it by the second values in the features
             total2 = total2 + (features[i][1] * delta[i])
-
+        # The second gradient averaged across allsamples.. 
         second_grad_vector_avg2 = total2/len(features)
 
 #print(second_grad_vector_avg2)
