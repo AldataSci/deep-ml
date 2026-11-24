@@ -13,7 +13,7 @@ def batch_iterator(X, y=None, batch_size=64):
             # We append the sliced array together as a pair.. 
             listr.append([X[i:i+batch_size],y[j:j+batch_size]])
         return listr
-    else:
+    else: # If there is no ybatch just append the listr
         for i in range(0,len(X),batch_size):
             listr.append(X[i:i+batch_size])
         return listr
