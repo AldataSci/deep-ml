@@ -30,6 +30,8 @@ def train_neuron(features: np.ndarray, labels: np.ndarray, int_weights: np.ndarr
         ds = []
 # derivative of loss
         dl = []
+        
+        # This whole bit is calculating mse 
         for y,y_prime in zip(labels,predictions):
             # Calculate the diff
             diff = y_prime - y
@@ -91,7 +93,7 @@ def train_neuron(features: np.ndarray, labels: np.ndarray, int_weights: np.ndarr
 #print(second_grad_vector_avg2)
 
         bias1 = 0
-
+        # The bias is different since we dont multpliy it by any features jut calculate the avg
         for i in range(len(delta)):
             bias1 = bias1 + delta[i]
 
