@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**33** solved · 22 problems · 0 labs · 11 math
+**34** solved · 23 problems · 0 labs · 11 math
 
 ![Coverage](./coverage.svg)
 
@@ -34,6 +34,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Matrix times Matrix ](https://www.deep-ml.com/problems/9) | medium | 2026-10-27 | [solution](problems/0009-matrix-times-matrix) |
 | [Quotient Rule for Derivatives](https://www.deep-ml.com/problems/312) | medium | 2026-10-30 | [solution](problems/0312-quotient-rule-for-derivatives) |
 | [Single Neuron with Backpropagation](https://www.deep-ml.com/problems/25) | medium | 2026-11-21 | [solution](problems/0025-single-neuron-with-backpropagation) |
+| [Stochastic Gradient Descent Step for Linear Regression](https://www.deep-ml.com/problems/802) | medium | 2026-11-27 | [solution](problems/0802-stochastic-gradient-descent-step-for-linear-regression) |
 
 ## Math
 
